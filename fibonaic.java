@@ -2,7 +2,9 @@ import java.util.*;
 
 public class fibonaic {
 
-    public static void main(String args[]) {
+1
+
+public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int fact = 0, sum;
