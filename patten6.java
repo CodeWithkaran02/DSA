@@ -28,4 +28,6 @@ public class patten6 {
             row++;
         }
     }
+}{
+
 }
