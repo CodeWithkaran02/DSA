@@ -7,5 +7,4 @@ public class PattenProg8 {
             }
             System.out.println();
         }
-    }
 }
