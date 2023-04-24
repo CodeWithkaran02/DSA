@@ -48,5 +48,6 @@ public class SpanArray {
 
         }
         return min;
+
     }
 }
