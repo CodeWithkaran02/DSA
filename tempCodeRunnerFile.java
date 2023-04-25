@@ -7,7 +7,7 @@ class Patten17
         {
             int n= sc.nextInt();
             int nsp =0,nst=n;
-            for(int i=1;i<n;i++)
+            for(int i=1; i<= n;  i++)
             {
                 //space
                 for(int j=1; j<=nst; j++)
@@ -21,20 +21,21 @@ class Patten17
                         System.out.print("/t");
 
                     }
+                    if(i<=b/2){
+                        nsp++;
+                        nst -=2;
+        
+                    }
+                    else {
+                        nsp--;
+                        nst+=2;
+                    }
                 }
             }
             //star
             System.out.println();
 
-            if(i<=b/2){
-                nsp++;
-                nst -=2;
-
-            }
-            else {
-                nsp--;
-                nst+=2;
-            }
+           
         }
             
         }
