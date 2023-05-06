@@ -13,7 +13,7 @@ public class brokenEconamy {
         }
     }
 
-    public static int binaryarray(int[] arr, int k) {
+    public static void binaryarray(int[] arr, int k) {
         int lo = 0, hi = arr.length - 1;
         int ceil = -1, floue = -1;
         while (lo <= hi) {
@@ -25,6 +25,9 @@ public class brokenEconamy {
             } else if (k > arr[mid]) {
                 lo = mid + 1;
                 floue = arr[mid];
+
+            } else {
+                System.out.println(arr[mid]);
                 return;
             }
         }
