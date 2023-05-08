@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Salary {
     public static void main(String[] args) {
         int bs, da, tx, ta, tra, gs, hs, tax;
