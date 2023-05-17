@@ -1,5 +1,5 @@
-import java.uitl.*;
 import java.io.*;
+import java.util.*;
 
 public class MatrixMultipulation2D {
     public static void input(int mat[][], Scanner sc) {
@@ -11,7 +11,7 @@ public class MatrixMultipulation2D {
         }
     }
 
-    public static void display(int mat[][], Scanner sc) {
+    public static void display(int mat[][]) {
         for (int r = 0; r < mat.length; r++) {
             for (int c = 0; c < mat[0].length; c++) {
                 System.out.print(mat[r][c] + " ");
@@ -21,23 +21,25 @@ public class MatrixMultipulation2D {
         }
     }
 
-    public static int[][] MatrixMultipulation2D(int mat1[][],mat2[][]){
-        int nr1=mat1.length,nc1 = mat1[0].length;
-        int nr2=mat2.length,nc2 = mat2[0].length;
+    public static int[][] MatrixMultipulation2D(int mat1[][], int mat2[][]) {
+        int nr1 = mat1.length, nc1 = mat1[0].length;
+        int nr2 = mat2.length, nc2 = mat2[0].length;
         int res[][] = null;
-        if(nc1=nr2){
+        if (nc1 = nr2) {
             res = new int[nr1][nc2];
-            for(int r =0; r<res.length;r++){
-                for(int c =0;c<res.length; c++){
-                    for(int k=0; k<nc1; k++){
-                        res[r][c]= res[r][c]+(mat[r][k]*mat2[k][c]);
+            for (int r = 0; r < res.length; r++) {
+                for (int c = 0; c < res.length; c++) {
+                    for (int k = 0; k < nc1; k++) {
+                        res[r][c] = res[r][c] + (mat[r][k] * mat2[k][c]);
                     }
                 }
             }
-            return res ;
+            return res;
+        } else {
+            System.out.println("Invalid Input");
         }
-        else {
-            System.out.println(Invalid Input);return res;
+
+        return res;
 
     }
 
