@@ -10,7 +10,7 @@ public class togglecase {
                 char uc = (char) ((ch - 'a') + 'A');
                 sb.append(uc);
 
-            } else if (ch >= 'A' && ch <= '2') {
+            } else if (ch >= 'A' && ch <= 'Z') {
                 char lc = (char) ((ch - 'A') + 'a');
                 sb.append(lc);
 
