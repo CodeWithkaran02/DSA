@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class patten13 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+    }
+}
