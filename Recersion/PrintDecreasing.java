@@ -8,15 +8,6 @@ public class PrintDecreasing {
         PrintDecreasingOrder(n);
     }
 
-    public static void printIncrese(int n) {
-        if (n == 0) {
-            return;
-        }
-
-        printIncrese(n - 1);
-        System.out.println(n);
-    }
-
     public static void PrintDecreasingOrder(int n) {
         if (n == 0) {
             return;
