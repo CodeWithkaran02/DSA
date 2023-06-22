@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PeintZigZag {
+public class PrintZigZag {
 
     public static void main(String args[]) {
         pzz(new Scanner(System.in).nextInt());
